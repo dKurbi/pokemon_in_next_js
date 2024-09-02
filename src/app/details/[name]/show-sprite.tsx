@@ -1,4 +1,4 @@
-import { ShowSpriteProps } from "@/app/lib/definitions";
+import { ShowSpriteProps } from "@/lib/definitions";
 
 export function ShowSprite({ url, alt }: ShowSpriteProps) {
 if (!url)

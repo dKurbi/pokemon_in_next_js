@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { Pokemon } from './lib/definitions';
+import { Pokemon } from '../lib/definitions';
 
 export function LoadMoreButton({ currentPokemon, nextUrl, setPokemon }: { currentPokemon: Pokemon[], nextUrl: string | null, setPokemon: (pokemon: Pokemon[]) => void }) {
   const router = useRouter();

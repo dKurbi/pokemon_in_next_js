@@ -1,5 +1,5 @@
 // src/app/details/[name]/show-details.tsx
-import { PokemonDetails } from "@/app/lib/definitions";
+import { PokemonDetails } from "@/lib/definitions";
 import { ShowSprite } from "./show-sprite";
 
 export function ShowPokemon({ pokemon }: { pokemon: PokemonDetails | null }) {

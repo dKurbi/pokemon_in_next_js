@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from 'react';
-import { Pokemon } from './lib/definitions';
+import { Pokemon } from '../lib/definitions';
 import { LoadMoreButton } from './load-more-button'; 
 export function ShowMainPage({ pokemonData, nextUrl }: { pokemonData: Pokemon[], nextUrl: string | null }) {
   const [pokemon, setPokemon] = useState<Pokemon[]>(pokemonData);

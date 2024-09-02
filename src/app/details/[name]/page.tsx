@@ -1,6 +1,6 @@
 // src/app/details/[name]/page.tsx
 
-import { fetchPokemonDetails } from '@/app/lib/data';
+import { fetchPokemonDetails } from '@/lib/data';
 import { ShowPokemon } from './show-details';
 
 export default async function PokemonDetailsPage({ params }: { params: { name: string } }) {

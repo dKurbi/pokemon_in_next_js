@@ -14,7 +14,7 @@ export function ShowMainPage({ pokemonData, nextUrl }: { pokemonData: Pokemon[],
           <li key={index} className="border p-2 rounded flex items-center">
             <img src={p.image} alt={p.name} className="w-12 h-12 mr-4" />
             <a href={`/details/${p.name}`} className="text-blue-500">
-              {p.name.charAt(0).toUpperCase() + p.name.slice(1) + " " + index}
+              {p.name.charAt(0).toUpperCase() + p.name.slice(1)}
             </a>
           </li>
         ))}

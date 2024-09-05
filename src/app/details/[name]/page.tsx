@@ -2,6 +2,7 @@
 
 import { fetchPokemonDetails } from '@/lib/data';
 import { ShowPokemon } from './components/show-details';
+import LoadingCircle from '@/app/components/loadingcircle';
 
 export default async function PokemonDetailsPage({ params }: { params: { name: string } }) {
   const name = Array.isArray(params.name) ? params.name[0] : params.name;
@@ -11,6 +12,6 @@ export default async function PokemonDetailsPage({ params }: { params: { name: s
     return <div>No Pokémon data available.</div>;
   }
 
-  return <ShowPokemon pokemon={pokemon} />;
+ return <ShowPokemon pokemon={pokemon} />;
 }
 

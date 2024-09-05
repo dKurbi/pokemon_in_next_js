@@ -2,7 +2,7 @@
 
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Pokemon } from "@/lib/definitions";
 import { LoadMoreButton } from "./load-more-button";
 
@@ -14,7 +14,7 @@ export function ShowMainPage({
   nextUrl: string | null;
 }) {
   const [pokemon, setPokemon] = useState<Pokemon[]>(pokemonData);
-  const [currentNextUrl, setCurrentNextUrl] = useState<string | null>(nextUrl); // Guarda la nextUrl actual
+  const [currentNextUrl, setCurrentNextUrl] = useState<string | null>(nextUrl); 
 
   return (
     <div className="p-4">

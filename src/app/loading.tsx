@@ -1,3 +1,5 @@
+import LoadingCircle from "@/app/components/loadingcircle";
+
 export default function Loading(){
-	return <div>Loading pokemon main page..</div>
+	return <LoadingCircle/>
 }

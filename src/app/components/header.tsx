@@ -10,7 +10,7 @@ export default function Header() {
 			padding: '10px', 
 		  }}
 		>
-		  Found your Pokemon
+		  Find your Pokemon
 		</h1>
 	  </header>
 	);

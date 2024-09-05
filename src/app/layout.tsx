@@ -27,7 +27,7 @@ export default function RootLayout({
         className={`${inter.className} ${luckiest_guy.className} bg-gradient-to-br from-yellow-200 to-yellow-500 min-h-screen flex flex-col`}
       >
 		<Header />
-        <div className="flex-grow">{children}</div>
+        <div className="flex-grow pl-8 pr-8">{children}</div>
         <Footer />
       </body>
     </html>

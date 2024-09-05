@@ -21,14 +21,16 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
-        <title>Pokemon List</title>
+        <title>Find your Pokemon</title>
       </head>
       <body
         className={`${inter.className} ${luckiest_guy.className} bg-gradient-to-br from-yellow-200 to-yellow-500 min-h-screen flex flex-col`}
       >
-		<Header />
-        <div className="flex-grow pl-8 pr-8">{children}</div>
-        <Footer />
+        <Header />
+        <main className="flex-grow pl-8 pr-8">
+          {children}
+        </main>
+        <Footer className="mt-auto"  />
       </body>
     </html>
   );

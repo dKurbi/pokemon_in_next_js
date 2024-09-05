@@ -30,7 +30,7 @@ export default function RootLayout({
         <main className="flex-grow pl-8 pr-8">
           {children}
         </main>
-        <Footer className="mt-auto"  />
+        <div className="mt-auto"><Footer/></div>
       </body>
     </html>
   );

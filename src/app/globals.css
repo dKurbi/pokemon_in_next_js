@@ -16,6 +16,22 @@
   }
 }
 
+@font-face {
+	font-family: 'PokemonSolid';
+	src: url('/fonts/PokemonSolidNormal.woff2') format('woff2'),
+		 url('/fonts/PokemonSolidNormal.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+  }
+
+  .pokemon-font {
+	font-family: 'PokemonSolid', sans-serif;
+	-webkit-text-stroke: 2px blue;
+	color: #ffcc03; 
+	display: inline-block; 
+	padding: 10px; 
+  }
+  
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(

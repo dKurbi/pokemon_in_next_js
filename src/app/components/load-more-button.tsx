@@ -41,10 +41,11 @@ export function LoadMoreButton({
   return (
     <button
       onClick={handleLoadMore}
-	  className="bg-purple-500 text-white font-semibold py-4 px-8 rounded-full shadow-lg transition-transform transform hover:scale-105 hover:shadow-2xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-400"
-      disabled={loading}
+	  className=" bg-gradient-to-br from-yellow-50 to-yellow-300 pokemon-font font-semibold text-2xl py-16 px-32 rounded-full shadow-lg transition-transform transform hover:scale-105 hover:shadow-2xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-400 "
+      style={{ padding: '16px 16px' }} 
+	  disabled={loading}
     >
-      {loading ? "Loading..." : "Load More"}
+      {loading ? "Loading..." : "Load More Pokemon"}
     </button>
   );
 }

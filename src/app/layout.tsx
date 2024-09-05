@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Footer from "./components/footer";
+import Header from "./components/header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,9 +22,12 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <title>Pokemon List</title>
       </head>
-	  <body className={`${inter.className} bg-gradient-to-br from-yellow-200 to-yellow-500 min-h-screen`}>
-        {children}
-        <Footer/>
+      <body
+        className={`${inter.className} bg-gradient-to-br from-yellow-200 to-yellow-500 min-h-screen flex flex-col`}
+      >
+		<Header />
+        <div className="flex-grow">{children}</div>
+        <Footer />
       </body>
     </html>
   );

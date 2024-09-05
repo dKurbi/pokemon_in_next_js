@@ -18,11 +18,10 @@ export function ShowMainPage({
 
   return (
     <div className="p-4">
-      <h1 className="text-2xl font-bold text-center mb-4">Pokemon List</h1>
       <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
         {pokemon.map((p, index) => (
           <a href={`/details/${p.name}`} key={index}>
-            <li className="bg-gradient-to-br from-yellow-50 to-yellow-150 border p-4 rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-2xl cursor-pointer flex flex-col items-center justify-center">
+            <li className="bg-gradient-to-br from-yellow-50 to-yellow-300 border p-4 rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-2xl cursor-pointer flex flex-col items-center justify-center">
               <img src={p.image} alt={p.name} className="w-15 h-15 mr-4" />
               <div className="text-blue-500">
                 {" "}

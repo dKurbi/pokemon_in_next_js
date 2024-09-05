@@ -10,14 +10,16 @@ export function ShowPokemon({ pokemon }: { pokemon: PokemonDetails | null }) {
     pokemon.sprites?.other?.["official-artwork"]?.front_default;
   const spriteShiny = pokemon.sprites?.other?.["official-artwork"]?.front_shiny;
   return (
-    <div className="p-4">
+    <div className="p-4 text-center">
       <h1 className="text-3xl font-bold">
         {pokemon.name
           ? pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)
           : "Unknown Pokémon"}
       </h1>
-		<ShowSprite url={spriteDefault} alt={pokemon.name} />
-		<ShowSprite url={spriteShiny} alt={pokemon.name + ' shiny'} />
+	  <div className="grid grid-cols-2">
+		<div className="img-center"><ShowSprite url={spriteDefault} alt={pokemon.name} /></div>
+		<div className="al"><ShowSprite url={spriteShiny} alt={pokemon.name + ' shiny'} /></div>
+		</div>
       <p>ID: {pokemon.id}</p>
       <p>Height: {pokemon.height}</p>
       <p>Weight: {pokemon.weight}</p>

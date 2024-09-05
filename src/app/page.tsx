@@ -1,5 +1,5 @@
 // src/app/page.tsx
-import { ShowMainPage } from './show-main-page';
+import { ShowMainPage } from './components/show-main-page';
 import { fetchInitialPokemon } from '../lib/data';
 
 export default async function HomePage({ searchParams }: { searchParams: { [key: string]: string | undefined } }) {

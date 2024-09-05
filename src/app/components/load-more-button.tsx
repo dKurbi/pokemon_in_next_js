@@ -1,9 +1,17 @@
 "use client";
 
-import { useState } from 'react';
-import { Pokemon } from '@/lib/definitions';
+import { useState } from "react";
+import { Pokemon } from "@/lib/definitions";
 
-export function LoadMoreButton({ currentPokemon, nextUrl, setPokemon }: { currentPokemon: Pokemon[], nextUrl: string | null, setPokemon: (pokemon: Pokemon[]) => void }) {
+export function LoadMoreButton({
+  currentPokemon,
+  nextUrl,
+  setPokemon,
+}: {
+  currentPokemon: Pokemon[];
+  nextUrl: string | null;
+  setPokemon: (pokemon: Pokemon[]) => void;
+}) {
   const [loading, setLoading] = useState(false);
 
   const handleLoadMore = async () => {
@@ -33,7 +41,7 @@ export function LoadMoreButton({ currentPokemon, nextUrl, setPokemon }: { curren
   return (
     <button
       onClick={handleLoadMore}
-      className="bg-blue-500 text-white px-4 py-2 rounded"
+	  className="bg-purple-500 text-white font-semibold py-4 px-8 rounded-full shadow-lg transition-transform transform hover:scale-105 hover:shadow-2xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-400"
       disabled={loading}
     >
       {loading ? "Loading..." : "Load More"}

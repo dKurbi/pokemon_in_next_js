@@ -21,7 +21,7 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <title>Pokemon List</title>
       </head>
-      <body className={inter.className}>
+	  <body className={`${inter.className} bg-gradient-to-br from-yellow-200 to-yellow-500 min-h-screen`}>
         {children}
         <Footer/>
       </body>

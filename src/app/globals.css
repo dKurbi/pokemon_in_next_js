@@ -24,6 +24,10 @@
 	font-style: normal;
   }
 
+  .bg-pokemon-gradient {
+	@apply bg-gradient-to-br from-yellow-50 to-yellow-300;
+  }
+
   .pokemon-font {
 	font-family: 'PokemonSolid', sans-serif;
 	-webkit-text-stroke: 2px blue;
@@ -31,7 +35,12 @@
 	display: inline-block; 
 	padding: 10px; 
   }
+
+.yelow_button {
+	@apply bg-pokemon-gradient pokemon-font font-semibold text-2xl py-16 px-32 rounded-full shadow-lg transition-transform transform hover:scale-105 hover:shadow-2xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-400;
+  }
   
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(

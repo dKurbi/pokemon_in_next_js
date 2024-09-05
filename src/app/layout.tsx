@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Footer from "./components/footer";
 import Header from "./components/header";
+import { luckiest_guy } from "@/lib/fonts";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,7 +24,7 @@ export default function RootLayout({
         <title>Pokemon List</title>
       </head>
       <body
-        className={`${inter.className} bg-gradient-to-br from-yellow-200 to-yellow-500 min-h-screen flex flex-col`}
+        className={`${inter.className} ${luckiest_guy.className} bg-gradient-to-br from-yellow-200 to-yellow-500 min-h-screen flex flex-col`}
       >
 		<Header />
         <div className="flex-grow">{children}</div>

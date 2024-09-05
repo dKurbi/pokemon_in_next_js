@@ -41,7 +41,7 @@ export function LoadMoreButton({
   return (
     <button
       onClick={handleLoadMore}
-	  className=" bg-gradient-to-br from-yellow-50 to-yellow-300 pokemon-font font-semibold text-2xl py-16 px-32 rounded-full shadow-lg transition-transform transform hover:scale-105 hover:shadow-2xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-400 "
+	  className="yelow_button"
       style={{ padding: '16px 16px' }} 
 	  disabled={loading}
     >

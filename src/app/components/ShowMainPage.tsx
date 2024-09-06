@@ -43,6 +43,7 @@ export function ShowMainPage({
             currentPokemon={pokemon}
             nextUrl={currentNextUrl}
             setPokemon={setPokemon}
+			setCurrentNextUrl={setCurrentNextUrl}
           />
         </div>
       )}

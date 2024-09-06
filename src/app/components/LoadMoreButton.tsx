@@ -9,6 +9,7 @@ export function LoadMoreButton({
   currentPokemon,
   nextUrl,
   setPokemon,
+  setCurrentNextUrl,
 }: {
   currentPokemon: Pokemon[];
   nextUrl: string | null;
@@ -36,7 +37,7 @@ export function LoadMoreButton({
     );
 
     setPokemon([...currentPokemon, ...newPokemonData]);
-
+	setCurrentNextUrl(data.next);
     setLoading(false);
   };
 

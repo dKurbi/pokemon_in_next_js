@@ -33,20 +33,21 @@ All API requests to fetch Pokemon data are handled server-side using **Next.js S
 
 ## Technologies Used
 
-- **Next.js**: For server-side rendering and API integration.
+- **Next.js**: For server-side rendering and API integration. (v20.17.0)
 - **Tailwind CSS**: For responsive and modern styling.
 - **PokeAPI**: As the source of Pokemon data.
 - **TypeScript**: For type safety and better development experience.
 
 ## Installation and Running Locally
 
-1. Clone the repository:
+Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/pokemon-app.git
-   cd pokemon-app
+   git clone https://github.com/dKurbi/pokemon_in_next_js
+   cd pokemon_in_next_js
    npm install
    npm run dev
+```
    
 
 ## Folder Structure 

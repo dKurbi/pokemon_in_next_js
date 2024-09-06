@@ -81,9 +81,7 @@ lib/
   ├── data.ts                          # Data fetching logic
   ├── definitions.ts                   # TypeScript types and interfaces
   ├── fonts.ts                         # Font configuration
-
-
-
+```
 
 ## Contributing
 If you'd like to contribute to this project, feel free to fork the repository and submit a pull request.

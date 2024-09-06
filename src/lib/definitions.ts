@@ -31,4 +31,5 @@ export interface ShowMainPageProps {
 export interface ShowSpriteProps {
   url: string;
   alt: string;
+  type: string;
 }

@@ -24,10 +24,10 @@ export function ShowPokemon({ pokemon }: { pokemon: PokemonDetails | null }) {
       </h1>
       <div className="grid grid-cols-2 gap-4 mb-6">
         <div className="flex justify-center items-center">
-          <ShowSprite url={spriteDefault} alt={pokemon.name} />
+          <ShowSprite url={spriteDefault} alt={pokemon.name} type="default"/>
         </div>
         <div className="flex justify-center items-center">
-          <ShowSprite url={spriteShiny} alt={`${pokemon.name} shiny`} />
+          <ShowSprite url={spriteShiny} alt={pokemon.name} type="shiny"/>
         </div>
       </div>
       <div className="grid grid-cols-3 gap-0 mb-6 border-8 border-gray-400 py-4 rounded-lg shadow-md">

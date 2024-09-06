@@ -13,7 +13,7 @@ This project is a Pokémon listing app that fetches data from the [PokéAPI](htt
 
 You can view the app running in production on Vercel:
 
-🔗 **<a href="https://vercel.com/dkurbis-projects/pokemon-in-next-js" target="_blank">View Pokémon App on Vercel</a>**
+🔗 **<a href="https://pokemon-in-next-js.vercel.app/" target="_blank">View Pokémon App</a>**
 
 
 ## API Security

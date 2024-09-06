@@ -9,6 +9,13 @@ This project is a Pokémon listing app that fetches data from the [PokéAPI](htt
 - **Dynamic Pokémon Details**: Users can click on a Pokémon to see more detailed information, such as its abilities and stats.
 - **Load More Functionality**: As users scroll through the list of Pokémon, they can load more results dynamically, ensuring a seamless experience.
 
+## Live Demo
+
+You can view the app running in production on Vercel:
+
+🔗 **<a href="https://vercel.com/dkurbis-projects/pokemon-in-next-js" target="_blank">View Pokémon App on Vercel</a>**
+
+
 ## API Security
 
 All API requests to fetch Pokémon data are handled server-side using **Next.js Server-Side Rendering (SSR)**. This approach ensures that:

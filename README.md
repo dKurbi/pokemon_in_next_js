@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Pokémon App
 
-## Getting Started
+This project is a Pokémon listing app that fetches data from the [PokéAPI](https://pokeapi.co/). It allows users to view details about different Pokémon and explore additional information in a secure way.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Server-Side API Requests**: All API requests to the PokéAPI are made from the server. This ensures that API endpoints and access details are hidden from the client, improving security.
+- **Responsive Layout**: The app is designed to work across various screen sizes and devices, including desktop and mobile.
+- **Dynamic Pokémon Details**: Users can click on a Pokémon to see more detailed information, such as its abilities and stats.
+- **Load More Functionality**: As users scroll through the list of Pokémon, they can load more results dynamically, ensuring a seamless experience.
+
+## API Security
+
+All API requests to fetch Pokémon data are handled server-side using **Next.js Server-Side Rendering (SSR)**. This approach ensures that:
+
+- The **API endpoints** are not exposed to the client, preventing direct access to the backend.
+- The logic for accessing external APIs remains hidden, protecting sensitive data like API keys or rate limits.
+- This makes the app more secure by limiting exposure to potential vulnerabilities in the API.
+
+## How It Works
+
+1. The **Home Page** fetches a list of Pokémon from the API using server-side methods.
+2. When the user clicks on a Pokémon, detailed information is also fetched on the server and rendered.
+3. The client only receives the final rendered HTML, which does not expose any of the internal API logic.
+4. The app uses **Next.js** for rendering, allowing for fast load times and an optimized user experience.
+
+## Technologies Used
+
+- **Next.js**: For server-side rendering and API integration.
+- **Tailwind CSS**: For responsive and modern styling.
+- **PokéAPI**: As the source of Pokémon data.
+- **TypeScript**: For type safety and better development experience.
+
+## Installation and Running Locally
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/pokemon-app.git
+   cd pokemon-app
+   npm install
+   npm run dev
+   
+
+## Folder Structure 
+```
+src/
+  ├── app/
+  │   ├── components/
+  │   │   ├── Cards.tsx          # Component to display Pokémon cards
+  │   │   ├── LoadMoreButton.tsx # Component to load more Pokémon
+  │   │   ├── ShowMainPage.tsx   # Main page component
+  │   ├── details/
+  │   │   └── [name]/
+  │   │       ├── page.tsx       # Pokémon details page
+  ├── lib/
+  │   ├── data.ts                # API fetch logic
+  │   ├── definitions.ts         # TypeScript definitions for Pokémon
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Contributing
+If you'd like to contribute to this project, feel free to fork the repository and submit a pull request.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.

@@ -9,7 +9,7 @@ export default async function PokemonDetailsPage({ params }: { params: { name: s
   const pokemon = await fetchPokemonDetails(name);
 
   if (!pokemon) {
-    return <div>No Pokémon data available.</div>;
+    return <div>No Pokemon data available.</div>;
   }
 
  return <ShowPokemon pokemon={pokemon} />;

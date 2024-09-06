@@ -1,4 +1,5 @@
 // src/app/components/Header.tsx
+
 export default function Header() {
 	return (
 	  <header className="text-center p-6">

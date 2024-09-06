@@ -1,7 +1,9 @@
+//src/app/details/[name]/components/ShowPokemon.tsx
+
 "use client";
 
 import { PokemonDetails } from "@/lib/definitions";
-import { ShowSprite } from "./show-sprite";
+import { ShowSprite } from "./ShowSprite";
 import { useRouter } from "next/navigation";
 
 export function ShowPokemon({ pokemon }: { pokemon: PokemonDetails | null }) {

@@ -1,4 +1,4 @@
-// src/app/details/[name]/show-sprite.tsx
+// src/app/details/[name]/ShowSprite.tsx
 
 import { ShowSpriteProps } from "@/lib/definitions";
 

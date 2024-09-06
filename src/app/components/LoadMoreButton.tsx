@@ -1,3 +1,5 @@
+// src/app/components/LoadMoreButton.tsx
+
 "use client";
 
 import { useState } from "react";

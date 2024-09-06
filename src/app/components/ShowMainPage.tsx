@@ -1,10 +1,10 @@
-// src/app/components/show-main-pages.tsx
+// src/app/components/ShowMainPage.tsx
 
 "use client";
 
 import { useState, useEffect } from "react";
 import { Pokemon } from "@/lib/definitions";
-import { LoadMoreButton } from "./load-more-button";
+import { LoadMoreButton } from "./LoadMoreButton";
 
 export function ShowMainPage({
   pokemonData,
@@ -14,7 +14,7 @@ export function ShowMainPage({
   nextUrl: string | null;
 }) {
   const [pokemon, setPokemon] = useState<Pokemon[]>(pokemonData);
-  const [currentNextUrl, setCurrentNextUrl] = useState<string | null>(nextUrl); 
+  const [currentNextUrl, setCurrentNextUrl] = useState<string | null>(nextUrl);
 
   return (
     <div className="p-4">

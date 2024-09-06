@@ -1,3 +1,5 @@
+//src/app/components/LoadingCircle.tsx
+
 import "./styles/loadingcircle.css";
 
 export default function LoadingCircle() {

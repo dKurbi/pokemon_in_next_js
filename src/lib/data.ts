@@ -1,4 +1,5 @@
 // src/app/data.ts
+
 import { PokemonDetails } from "./definitions";
 import { Pokemon } from './definitions';
 

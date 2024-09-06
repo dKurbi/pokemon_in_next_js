@@ -51,19 +51,38 @@ All API requests to fetch Pokémon data are handled server-side using **Next.js 
 
 ## Folder Structure 
 ```
+public/
+  ├── fonts/
+  │   ├── PokemonSolidNormal.woff
+  │   ├── PokemonSolidNormal.woff2
 src/
   ├── app/
   │   ├── components/
-  │   │   ├── Cards.tsx          # Component to display Pokémon cards
-  │   │   ├── LoadMoreButton.tsx # Component to load more Pokémon
-  │   │   ├── ShowMainPage.tsx   # Main page component
+  │   │   ├── styles/
+  │   │   │   ├── loading-circle.css   # Styles for the loading circle
+  │   │   ├── Footer.tsx               # Footer component
+  │   │   ├── Header.tsx               # Header component
+  │   │   ├── LoadingCircle.tsx        # Loading circle component
+  │   │   ├── LoadMoreButton.tsx       # "Load More" button component
+  │   │   ├── ShowMainPage.tsx         # Main page that shows the Pokémon list
   │   ├── details/
   │   │   └── [name]/
-  │   │       ├── page.tsx       # Pokémon details page
-  ├── lib/
-  │   ├── data.ts                # API fetch logic
-  │   ├── definitions.ts         # TypeScript definitions for Pokémon
-```
+  │   │       ├── components/
+  │   │       │   ├── ShowPokemon.tsx  # Component to show Pokemon details
+  │   │       │   ├── ShowSprite.tsx   # Component to display Pokémon sprites
+  │   │       ├── page.tsx             # Pokemon details page
+  │   ├── favicon.ico                  # Favicon
+  │   ├── globals.css                  # Global styles
+  │   ├── layout.tsx                   # Main layout of the app
+  │   ├── loading.tsx                  # Global loading screen
+  │   ├── page.tsx                     # Home page
+
+lib/
+  ├── data.ts                          # Data fetching logic
+  ├── definitions.ts                   # TypeScript types and interfaces
+  ├── fonts.ts                         # Font configuration
+
+
 
 
 ## Contributing
